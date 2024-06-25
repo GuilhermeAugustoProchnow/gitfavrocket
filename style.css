@@ -1,0 +1,177 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --ff-primary: 'roboto', sans-serif;
+    --text-color: hsla(240, 9%, 89%, 1);
+
+    --hue:194;
+    --primary-color: hsla(194, 72%, 13%, 1);
+    --colloo--button: hsla(195, 91%, 25%, 1);
+    --bg-primary: hsla(192, 62%, 3%, 1);
+}
+
+body {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background-color: hsla(192, 62%, 3%, 1);
+    ;
+}
+
+body *{
+    font-family: var(--ff-primary);
+}
+
+
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+#app {
+    padding: 2rem;
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    
+    margin: 2.5rem 0 5.5rem 0 ;
+}
+
+.hd-title {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+header img {
+    width: 5.2rem;
+}
+header h1 {
+    font-size: 2rem;
+    text-transform: normal;
+    text-align: left;
+}
+
+.search {
+    
+    display: flex;
+    align-items: center;
+    gap: 8px ;
+}
+
+.search input {
+    color: var(--text-color);
+    width: 43rem;
+    height: 3.2rem;
+    border-radius: .4rem 0 0 .4rem ;
+    padding: 0 .8rem;
+    background: var(--primary-color);
+}
+
+.search button {
+    color: var(--text-color);
+    background-color: var(--colloo--button);
+    border-radius:.4rem;
+    height: 3.2rem;
+    border: none;
+    padding: 0 1rem;
+    cursor: pointer;
+}
+
+.search button:hover{
+    filter: brightness(1.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+
+    
+}
+
+
+.user-table {
+    width: 440px;
+}
+
+table * {
+    font-size: 1.4rem;
+    color: var(--text-color);
+}
+
+table th {
+    background-color: var(--primary-color);
+    text-align: left;
+    font-weight: normal;
+    padding: 1.5rem;
+
+}
+
+table th:first-child {
+    border-top-left-radius: .4rem;
+}
+
+table th:last-child {
+    border-top-right-radius: .4rem;
+}
+
+table tr:nth-child(odd){
+    background: var(--bg-primary);
+}
+
+table tr {
+    background: var(--primary-color);
+}
+
+table td {
+    padding: 1.5rem;
+    text-align: left;
+}
+
+td.user {
+    display: flex;
+    align-items: center;
+    gap:1rem;
+}
+
+td.user img {
+    width: 5rem;
+    height: 5rem;
+
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+td.user a {
+    text-decoration: none;
+}
+
+td.user a p {
+    font-weight: bold;
+}
+
+td.remove {
+    background: none;
+    border: none;
+    color: red;
+
+    cursor: pointer;
+}
